@@ -4,14 +4,18 @@
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
     <!--When it reaches the below line the html contacts google server to download the custom fonts.-->
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+  <link href="//fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+  
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
 
-  <body>
+<body>
+  <div class = "container">
     <%= yield %>
+  </div>
+    
     <!--Above yield line is where rails pulls in code from other view files. e.g. homepage is in index.html file in pages folder. ANytime you enter home page, applicattion.html is loaded and 
     when it reaches yield, it pulls in code from the index.html file in pages folder to render html-->
     <!--Comment on application.html. This file is loaded on every single page on our website. -->
