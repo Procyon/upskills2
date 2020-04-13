@@ -1,6 +1,9 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 //Typography styles//
 
@@ -20,11 +23,12 @@ h1, h2, h3 {
 }
 
 
-//Nav bar styles. //
+//Nav bar styles. 
 
 .navbar {
 border: none;
 }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
 color:white;
