@@ -23,13 +23,21 @@
       <span class="icon-bar"></span>
     </button>
     
-    
-    <a href="/" class="navbar-brand"><i class= "fa fa-user"></i> Devmatch</a>
-  </div>
-  <div class="collapse navbar-collapse" id="main-nav-collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/about" class="navbar-link">About Me</a></li>
-    </ul>
+  
+  <a href="/" class="navbar-brand">
+    <i class= "fa fa-user"> </i> Devmatch
+    </a>
+    <%= link_to "/" , class: "navbar-brand" do %>
+    <i class = "fa fa-user"></i> 
+    Devmatch
+    <% end %>
+</div>
+
+<div class="collapse navbar-collapse" id="main-nav-collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="/about" class="navbar-link">About Me</a></li>
+    <li><%=link_to "About", "/about" %></li>
+  </ul>
   </div><!-- /.navbar-collapse -->
 </div>
 </nav>
